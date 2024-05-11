@@ -1,0 +1,171 @@
+/* ********* Hero **************/
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 30px 0;
+}
+
+.hero-title {
+  margin-bottom: 0;
+}
+
+.hero-subtitle {
+  margin-top: 5px;
+}
+
+
+.search-form {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0px;
+}
+
+.search-form .left {
+  color: black;
+  background-color: var(--main-bg-color);
+  padding: 20px 20px;
+  border-radius: 20px 0 0 20px;
+  font-size: 16px;
+}
+
+.search-form .right {
+  display: none;
+}
+
+.search-form input {
+  padding: 18px;
+  border: 1px solid var(--main-bg-color);
+  font-size: 16px;
+}
+
+.search-form button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 19px 19px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  font-size: 16px;
+  margin-left: -2px;
+}
+
+.filter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.filter .buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.filter .title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.filter i {
+  padding-right: 10px;
+}
+
+.filter button {
+  background-color: white;
+  padding: 10px 20px;
+  border: 1.5px solid #D9D9D9;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.filter button:hover {
+  background-color: var(--filter-bg-color);
+  cursor: pointer;
+}
+
+
+/* Ecran de taille inférieure à 768px */
+@media (max-width: 768px) {
+
+  /********** Hero **************/
+  .hero-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  .search-form {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .search-form input {
+    width: 100%;
+  }
+
+  .search-form .left {
+    background-color: var(--main-bg-color);
+    padding: 12.5px;
+    border-radius: 20px 0 0 20px;
+    font-size: 16px;
+  }
+
+  .search-form button {
+    display: none;
+  }
+
+  .search-form .right {
+    display: block;
+    background-color: var(--main-color);
+    padding: 12.5px;
+    border-radius: 7px;
+    font-size: 16px;
+    margin-left: -10px;
+    color: white;
+  }
+
+
+  .search-form input {
+    padding: 10px;
+    border: 1px solid var(--main-bg-color);
+    font-size: 16px;
+  }
+
+  .filter .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .filter .title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .filter i {
+    padding-right: 10px;
+  }
+
+  .filter button {
+    width: 48%;
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 20px;
+    font-size: 16px;
+  }
+}
