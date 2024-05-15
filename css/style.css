@@ -9,6 +9,8 @@
 
 * {
   font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 :root {
@@ -31,6 +33,7 @@ body {
   max-width: 1224px;
   padding: 0 40px;
   box-sizing: border-box;
+  padding: 10px;
 }
 
 a {
@@ -69,12 +72,7 @@ a {
   justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
-  background-color: var(--main-bg-color);
-  border-radius: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-}
+
 
 
 
@@ -84,10 +82,6 @@ a {
 
 /* Ecran de taille inférieure à 1024px */
 @media (max-width: 1024px) {
-  body {
-    background-color: blue
-  }
-
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -95,13 +89,12 @@ a {
 
 /* Ecran de taille inférieure à 768px */
 @media (max-width: 768px) {
+  .hebergements-and-populaires {
+    flex-direction: column-reverse;
+  }
   .main-container {
     width: 100%;
     max-width: 100%;
-    padding: 0px;
   }
 
-  body {
-    background-color: yellow;
-  }
 }

@@ -2,7 +2,12 @@
 /****** Populaires ***********/
 .populaires {
   width: 32%;
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
 }
+
 
 .populaires-title {
   display: flex;
@@ -76,5 +81,28 @@
 
   .populaires-cards .card-subtitle {
     font-size: 13px;
+  }
+}
+
+/* Ecran de taille inférieure à 768px */
+@media (max-width: 768px) {
+  .populaires {
+    border-radius: 0;
+    margin-top: 0;
+  }
+  .populaires-cards {
+    flex-direction: column;
+  }
+
+  .populaires-cards a {
+    width: 100%;
+  }
+
+  .populaires-cards .card-title {
+    font-size: 12px;
+  }
+
+  .populaires-cards .card-subtitle {
+    font-size: 11px;
   }
 }
